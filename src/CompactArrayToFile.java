@@ -30,7 +30,7 @@ public class CompactArrayToFile {
     }
 
     private static byte[] compactIntToBytes(int value) {
-        // Записываем компактированное значение в 3 байта
+        // Записываем упакованное значение в 3 байта
         return new byte[]{(byte) (value & 0xFF), (byte) ((value >> 8) & 0xFF), (byte) ((value >> 16) & 0xFF)};
     }
 }
